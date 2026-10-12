@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -10,10 +11,10 @@ spec:
   template:
     metadata:
       labels:
-        app:seleniumtestdemo
+        app: seleniumtestdemo
     spec:
       containers:
         - name: seleniumtestdemo
-          image: nandini9334/week8:v1 # use your Docker Hub image
+          image: nandini9334/week8:seleniumimage1
           ports:
             - containerPort: 5050
